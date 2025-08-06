@@ -32,7 +32,7 @@ function App() {
                             </a>
                         </Button>
                         <Button variant="ghost" className="hover:underline hover:cursor-pointer text-lg py-6">
-                            <a href="/Joseph_Miller_Resume-1.pdf" className="flex items-center gap-1">
+                            <a href="/Joseph_Miller_Resume-1.pdf" className="flex items-center gap-1" target="_blank" rel="noopener noreferrer">
                                 <Download /> Download CV
                             </a>
                         </Button>
