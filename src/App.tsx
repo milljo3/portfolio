@@ -32,7 +32,7 @@ function App() {
                             </a>
                         </Button>
                         <Button variant="ghost" className="hover:underline hover:cursor-pointer text-lg py-6">
-                            <a href="" className="flex items-center gap-1">
+                            <a href="/Joseph_Miller_Resume-1.pdf" className="flex items-center gap-1">
                                 <Download /> Download CV
                             </a>
                         </Button>
@@ -111,7 +111,7 @@ function App() {
 
             <section id="contact" className="w-full min-h-[30vh] flex flex-col items-center justify-center text-center p-4 gap-1">
                 <h2 className="text-3xl font-semibold mb-4">Let's connect</h2>
-                <p className="mb-2">Like what you see? Reach out via email to collaborate!</p>
+                <p className="mb-2">Feel free to reach out. I'm open to opportunities and collaborations!</p>
                 <a href="mailto:joeykm91@gmail.com" className="text-blue-600 underline text-lg">joeykm91@gmail.com</a>
                 <div className="flex gap-2 self-center">
                     <a className="h-8 w-8" href="https://github.com/milljo3" target="_blank" rel="noopener noreferrer">
