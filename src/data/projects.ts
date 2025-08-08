@@ -10,9 +10,9 @@ export const projects: Project[] = [
     {
         title: "Collab Board",
         description: "A Trello-like project board with user authentication, drag-and-drop, and real-time updates.",
-        link: "https://collab-board-five.vercel.app/",
+        link: "https://collab-board-five.vercel.app",
         github: "https://github.com/milljo3/collab-board",
-        tags: ["Next.js", "React", "TypeScript", "Socket.IO", "Zod", "Prisma", "AI"]
+        tags: ["Next.js", "React", "React Query", "TypeScript", "Socket.IO", "Zod", "Prisma", "Redis", "AI"]
     },
     {
         title: "Summit Ai",

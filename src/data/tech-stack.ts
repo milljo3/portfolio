@@ -8,6 +8,4 @@ export const techStack = [
     "Express.js",
     "Prisma ORM",
     "PostgreSQL",
-    "Zod",
-    "Better Auth",
 ];
