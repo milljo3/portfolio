@@ -13,6 +13,7 @@ import {ArrowUpRight, ChevronRight, Download} from "lucide-react";
 import {Button} from "./components/ui/button.tsx";
 import Navbar from "./components/Navbar.tsx";
 import ParallaxBackground from "./components/ParallaxBackground.tsx";
+import {experience} from "./data/experience.ts";
 
 function App() {
     return (
@@ -24,7 +25,18 @@ function App() {
             <section id="about" className="w-full h-screen flex items-center justify-center p-2">
                 <div className="flex flex-col px-2 text-center gap-3 md:w-2/3 w-full">
                     <h1 className="text-6xl">Joseph Miller<br/>Full Stack Developer</h1>
-                    <p>I build websites and develop video games in my free time with Unity</p>
+                    <p>
+                        Full stack developer with experience building real-world applications using Angular and Java Spring Boot. <br  /> I also build web apps and{" "}
+                    <a
+                        href="https://joseph-miller-game.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline hover:opacity-80"
+                    >
+                        games
+                    </a>{" "}
+                        in my free time.
+                    </p>                    
                     <div className="flex gap-2 self-center md:flex-row flex-col">
                         <Button className="hover:cursor-pointer text-lg py-6">
                             <a href="#projects" className="flex items-center gap-1">
@@ -57,6 +69,48 @@ function App() {
                                 <CardContent>
                                     <p>{tech}</p>
                                 </CardContent>
+                            </Card>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" className="w-full min-h-[60vh] flex items-center justify-center">
+                <div className="flex flex-col gap-2 p-2 md:w-2/3 w-full">
+                    <h2 className="text-4xl font-semibold">Experience</h2>
+
+                    <div className="flex flex-col gap-2">
+                        {experience.map((exp, index) => (
+                            <Card key={index} className="p-3">
+                                <CardHeader>
+                                    <CardTitle>
+                                        <div className="flex justify-between flex-wrap gap-2">
+                                            <div>
+                                                <p className="text-2xl">{exp.role}</p>
+                                                <p className="text-sm text-muted-foreground">{exp.company}</p>
+                                            </div>
+                                            <p className="text-sm text-muted-foreground">{exp.duration}</p>
+                                        </div>
+                                    </CardTitle>
+                                </CardHeader>
+
+                                <CardContent>
+                                    <ul className="list-disc ml-5 text-lg space-y-1">
+                                        {exp.description.map((item, i) => (
+                                            <li key={i}>{item}</li>
+                                        ))}
+                                    </ul>
+                                </CardContent>
+
+                                <CardFooter>
+                                    <div className="flex gap-1 flex-wrap">
+                                        {exp.tags?.map((tag, i) => (
+                                            <Badge key={i}>
+                                                <p className="text-[14px] p-1">{tag}</p>
+                                            </Badge>
+                                        ))}
+                                    </div>
+                                </CardFooter>
                             </Card>
                         ))}
                     </div>
